@@ -71,8 +71,10 @@ class PopularModel {
             ? []
             : List<int>.from(json["genre_ids"]!.map((x) => x)),
         id: json["id"],
-        originalLanguage:
-            originalLanguageValues.map[json["original_language"]]!,
+        originalLanguage: json["original_language"] != null
+            ? originalLanguageValues.map[json["original_language"]]
+            : null, // Обрабатываем случай, когда json["original_language"] равно null или отсутствует в originalLanguageValues.map
+
         originalTitle: json["original_title"],
         overview: json["overview"],
         popularity: json["popularity"]?.toDouble(),

@@ -1,0 +1,12 @@
+{
+    "language": "Language",
+    "english": "English",
+    "russian": "Russian",
+    "about": "About",
+    "exit": "Exit",
+    "warning": "Warning",
+    "areYouSure": "Are you sure you want to go out?",
+    "thisProduct": "This product uses the TMDB API but is not endorsed or certified by TMDB.This app is developed for education purpose.",
+    "rating": "Rating: ",
+    "casts": "Casts"
+}

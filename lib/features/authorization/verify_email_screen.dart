@@ -1,10 +1,12 @@
 import 'dart:async';
 
+import 'package:auto_route/auto_route.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:star_wars_app/features/authorization/auth_screen.dart';
 import 'package:star_wars_app/internal/helpers/snack_bar.dart';
 
+@RoutePage()
 class VerifyEmailScreen extends StatefulWidget {
   const VerifyEmailScreen({super.key});
 

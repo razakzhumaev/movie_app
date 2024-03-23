@@ -1,12 +1,10 @@
-// import 'package:flutter/foundation.dart';
 import 'dart:async';
-
+import 'package:auto_route/auto_route.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:star_wars_app/features/authorization/auth_screen.dart';
 import 'package:star_wars_app/features/authorization/verify_email_screen.dart';
-import 'package:star_wars_app/internal/components/app_routes.dart';
+import 'package:star_wars_app/internal/components/routes/auto_route.gr.dart';
 
 class FirebaseStream extends StatefulWidget {
   const FirebaseStream({super.key});
@@ -18,8 +16,8 @@ class FirebaseStream extends StatefulWidget {
 class _FirebaseStreamState extends State<FirebaseStream> {
   @override
   void initState() {
-    Timer(const Duration(milliseconds: 100), () {
-      context.go(RouterConstants.movieScreen);
+    Timer(const Duration(milliseconds: 50), () {
+      AutoRouter.of(context).replace(const SplashRoute());
     });
     super.initState();
   }

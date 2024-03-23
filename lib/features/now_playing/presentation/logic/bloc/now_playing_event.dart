@@ -4,3 +4,5 @@ part of 'now_playing_bloc.dart';
 sealed class NowPlayingEvent {}
 
 class GetAllNowPlayingEvent extends NowPlayingEvent {}
+
+
