@@ -1,11 +1,9 @@
 import 'package:dio/dio.dart';
-import 'package:injectable/injectable.dart';
 import 'package:star_wars_app/features/now_playing/data/models/now_playing_model.dart';
 import 'package:star_wars_app/features/now_playing/domain/repository/now_playing_repository.dart';
 import 'package:star_wars_app/internal/helpers/api_requester.dart';
 import 'package:star_wars_app/internal/helpers/catch_exception.dart';
 
-@Injectable(as: NowPlayingRepository)
 class NowPlayingRepositoryImpl implements NowPlayingRepository {
   ApiRequester apiRequester = ApiRequester();
 

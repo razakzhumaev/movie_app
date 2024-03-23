@@ -1,8 +1,6 @@
-import 'package:injectable/injectable.dart';
 import 'package:star_wars_app/features/popular/data/model/popular_model.dart';
 import 'package:star_wars_app/features/popular/domain/repository/popular_repository.dart';
 
-@injectable
 class PopularUseCase {
   final PopularRepository popularRepository;
 

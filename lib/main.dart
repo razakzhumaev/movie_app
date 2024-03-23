@@ -3,11 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:star_wars_app/firebase_options.dart';
 import 'package:star_wars_app/internal/components/app_routes.dart';
-import 'package:star_wars_app/internal/dependencies/get_it.dart';
 
 Future<void> main() async {
   
-  configureDependencies();
 
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(

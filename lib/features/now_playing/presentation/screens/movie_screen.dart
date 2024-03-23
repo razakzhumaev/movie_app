@@ -21,9 +21,7 @@ class _MovieScreenState extends State<MovieScreen> {
   int current = 0;
   double itemWidth = 1.sw;
 
-  PopularBloc popularBloc = getIt<PopularBloc>();
-
-  NowPlayingBloc bloc = getIt<NowPlayingBloc>();
+  
 
   @override
   void initState() {
