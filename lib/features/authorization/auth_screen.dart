@@ -45,7 +45,7 @@ class _AuthScreenState extends State<AuthScreen> {
                   const SizedBox(height: 50),
                   Text(
                     'Razakflix',
-                    style: TextHelper.w700s44Notable,
+                    style: TextHelper.w700s44Notable
                   ),
                   SizedBox(height: 100.h),
                   const TabBar(
